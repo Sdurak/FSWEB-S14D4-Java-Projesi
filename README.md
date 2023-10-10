@@ -11,18 +11,18 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 
 ### Product For Sale
 
- * ProductForSale isimli bir ```abstract``` sınıf oluşturunuz.
+ * abstraction.product.models.ProductForSale isimli bir ```abstract``` sınıf oluşturunuz.
  * Bu sınıf içerisinde 3 tane ```private``` değişken tanımlayınız. ```type, price, description```. Tiplerinin ne olması gerektiğine karar veriniz ve hepsi için birer getter metodu yazınız.
  * Tek bir tane ```constructor``` metodu tanımlayınız. 3 ```instance variable``` değerini de set etmeli.
- * ProductForSale sınıfına ```getSalesPrice(int quantity)``` isimli bir metod ekleyiniz. ```quantity*price``` değerini dönmeli.
- * ProductForSale sınıfına ```showDetails``` isimli ```abstract``` bir metod ekleyiniz. Dönüş değeri olmamalı.
+ * abstraction.product.models.ProductForSale sınıfına ```getSalesPrice(int quantity)``` isimli bir metod ekleyiniz. ```quantity*price``` değerini dönmeli.
+ * abstraction.product.models.ProductForSale sınıfına ```showDetails``` isimli ```abstract``` bir metod ekleyiniz. Dönüş değeri olmamalı.
 
- * ```Chocolate, Coke, Bread``` isimli 3 tane yeni sınıf oluşturunuz. 3 sınıfta ```ProductForSale``` sınıfından türemeli.
+ * ```Chocolate, Coke, Bread``` isimli 3 tane yeni sınıf oluşturunuz. 3 sınıfta ```abstraction.product.models.ProductForSale``` sınıfından türemeli.
  * Her sınıfa o sınıfa özgü en az bir tane daha ```instance variable``` değeri ekleyiniz.
- * ```showDetails``` isimli metot, ProductForSale üzerinde var olan ve kendine özgü olan tüm ```instance variable``` değerlerini anlaşılabilir bir şekilde ekrana bastırmalı.
+ * ```showDetails``` isimli metot, abstraction.product.models.ProductForSale üzerinde var olan ve kendine özgü olan tüm ```instance variable``` değerlerini anlaşılabilir bir şekilde ekrana bastırmalı.
 
- * Store sınıfı içerisinde bulanan ```listProducts``` metodu parametre olarak aldığı ```products``` dizisini gezmeli ve her bir değer için  ```showDetails``` metodunu çağırmalı.
- * Store sınıfında main metodu içerisinde ProductForSale değeri alabilen bir dizi oluşturmalısınız. 
+ * abstraction.product.main.Store sınıfı içerisinde bulanan ```listProducts``` metodu parametre olarak aldığı ```products``` dizisini gezmeli ve her bir değer için  ```showDetails``` metodunu çağırmalı.
+ * abstraction.product.main.Store sınıfında main metodu içerisinde abstraction.product.models.ProductForSale değeri alabilen bir dizi oluşturmalısınız. 
  * Bu dizinin içerisine ```Chocolate, Coke, Bread``` objelerinden birer adet eklemelsiniz.
  * Bu diziyi ```listProducts``` metoduna parametre olarak geçiniz.
  * Her bir ```showDetails``` metodu çağırıldığında çağırıldığı objeye göre mesaj döndüğünden emin olunuz.
